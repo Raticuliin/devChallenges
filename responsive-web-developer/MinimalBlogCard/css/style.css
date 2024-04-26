@@ -1,0 +1,90 @@
+/* Installing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+:root {
+    --purple-dark:  #883AE1;
+    --purple-light: #E6D6FC;
+    
+    --grey-lighter: #FAFAF9;
+    --grey-light:   #E5EAF0;
+    --grey-dark:    #6C727F;
+    --grey-darker:  #20293A;
+
+    --white:        #FFFFFF;
+}
+
+* {
+    font-family: 'Sora', sans-serif;
+    /* border: 1px dotted red; */
+}
+
+body{
+    background-color: var(--grey-lighter);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--white);
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+    max-width: 368px;
+
+
+    gap: 16px;
+}
+
+.image {
+    border-radius: 16px;
+    width: 336px;
+}
+
+.tags {
+    font-size: .625rem;
+    font-weight: bold;
+    color: var(--purple-dark);
+    margin-top: 16px;
+
+    display: flex;
+}
+
+.tag-item {
+    padding: 6px 16px;
+    background-color: var(--purple-light);
+    border-radius: 1rem;
+}
+
+.text {
+    margin-top: 16px;
+}
+
+.title {
+    color: var(--grey-darker);
+    font-size: 1.125rem;
+    font-weight: bold;
+
+    margin-bottom: 6px;
+}
+
+.description {
+    color: var(--grey-dark);
+    font-size: 0.875rem;
+}
+
+.separator{
+    border-top: 1px solid var(--grey-light);
+
+    margin: 20px -16px;
+}
+
+.maker {
+
+    color: var(--grey-dark);
+    font-size: .75rem;
+
+    padding-top: 1rem;
+    margin-bottom: 4px;
+}
