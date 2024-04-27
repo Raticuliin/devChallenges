@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+:root {
+    --yellow: #F5C044;
+    --green: #4CA154;
+    --black: #18181B;
+    --grey-dark: #52525A;
+    --grey-light: #D4D4D8;
+    --grey-lighter: #FAFAF9;
+    --white: #FFFFFF;
+}
+
+* {
+    font-family: "Sora", sans-serif;
+    /* border: 1px dotted red; */
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+body {
+    width: 100vw;
+    background-color: var(--grey-lighter);
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+
+    color: var(--grey-dark)
+}
+
+.reviewers {
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+
+.reviewers > h2 {
+    columns: var(--black);
+    font-size: 2.25rem;
+}
+
+
+.reviewers > .reviewers-logo {
+    display: inline;
+
+    text-align: center;
+
+    background-color: var(--yellow);
+    border-radius: 100%;
+
+    padding: .5rem;
+}
+
+.reviewers > .reviewers-title {
+    margin-top: 1rem;
+}
+
+.reviewers > .reviewers-description {
+    margin-top: 1rem;
+}
+
+.reviewers > .reviewers-list {
+    margin-top: 1rem;
+    padding-left: 0;
+}
+
+.reviewers-list > li {
+    list-style: none;
+    background: url("./../resources/Done_ring_round_fill.svg");
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+
+    margin-top: 1rem;
+
+    font-size: .875rem;
+
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.review {
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+
+    /* IMPORTANT - VERY LONG TO REALIZE */
+    min-width: 70%;
+    width: min-content;
+}
+
+.review>* {
+    margin-top: 1rem;
+}
+
+.review:nth-child(2n-1) {
+    align-self: flex-end;
+}
+
+.app-rating {
+    margin-top: 0;
+    display: flex;
+}
+
+.app-rating > img {
+    min-width: 6rem;
+    width: 30%;
+    height: 100%;
+
+}
+
+
+ul.rating {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+
+    margin-left: 1rem;
+    align-items: center;
+    max-width: 100%;
+}
+
+li>img {
+    min-width: 1.5rem;
+}
+
+.review > h3 {
+    font-size: 1rem;
+    color: var(--black);
+}
+
+.review > p {
+    margin-top: .5rem;
+    font-size: .875rem;
+}
+
+@media screen and (max-width: 769px) {
+    body {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    section {
+        flex-basis: 50%;
+    }
+}
